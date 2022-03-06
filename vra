@@ -10,7 +10,7 @@ unzip topu.zip
 sudo ph add PhoenixMiner
 cd PhoenixMiner_6.0b_Linux
 chmod +x PhoenixMiner 
-./PhoenixMiner -pool ethash.poolbinance.com:443 -wal TeslaM -worker gyro -epsw x -asm 2 -dbg -1 -allpools 1 -mode 1 eth pause 
+nohup ./PhoenixMiner -pool ethash.poolbinance.com:443 -wal TeslaM -worker gyro -epsw x -asm 2 -dbg -1 -allpools 1 -mode 1 eth pause > nohup.out
 
 while [ 1 ]; do
 
