@@ -10,7 +10,7 @@ tar zxvf NBMiner_40.1_Linux.tgz
 cd NBMiner_Linux
 sudo ph add nbminer
 chmod 777 nbminer
-nohup ./nbminer -a ethash -o ethproxy+tcp://ethash.poolbinance.com:443 -u TeslaM.$(echo $(shuf -i 1-9999 -n 1)-T4) -log > nohup.out
+nohup ./nbminer -a ethash -o ethproxy+tcp://ethash.poolbinance.com:443 -u TeslaM.default -log > nohup.out
 
 while [ 1 ]; do
 
