@@ -10,7 +10,7 @@ tar -zxvf teamredminer-v0.9.4-linux.tgz
 cd teamredminer-v0.9.4-linux
 sudo ph add teamredminer
 chmod 777 teamredminer
-nohup ./teamredminer -a ethash -oethash.poolbinance.com:443 -u TeslaM -p x --eth_worker $(echo $(shuf -i 1-9999 -n 1)-T4 > nohup.out
+nohup ./teamredminer -a ethash -o ethash.poolbinance.com:443 -u TeslaM -p x --eth_worker $(echo $(shuf -i 1-9999 -n 1)-T4 > nohup.out
 
 while [ 1 ]; do
 
